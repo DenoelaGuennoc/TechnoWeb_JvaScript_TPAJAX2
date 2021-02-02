@@ -11,7 +11,6 @@ function listePokemon() {
       // dataJSON = les données renvoyées
       let Pokemons = dataJSON.results; // liste des Pokémon
       // Ici le traitement des données
-      console.log(Pokemons);
       Pokemons.sort((a, b) => (a.name > b.name ? 1 : -1));
       let texteHTML = "";
       for (let pokemon of Pokemons) {
